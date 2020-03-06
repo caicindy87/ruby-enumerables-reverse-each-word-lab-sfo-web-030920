@@ -2,8 +2,14 @@ require 'pry'
 def reverse_each_word(string)
   new_array = string.split
   reversed = []
-  new_array.each do |character|
-    reversed << character.reverse
+  new_array.each do |word|
+    reversed << word.reverse
   end
   reversed.join(' ')
+end
+
+def reverse_each_word(string)
+  new_array = string.split
+  new_array.collect do |word|
+    word.reverse
 end
