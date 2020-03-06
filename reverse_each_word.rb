@@ -11,6 +11,8 @@ require 'pry'
 def reverse_each_word(string)
   new_array = string.split
   new_array.collect do |word|
-    word.reverse.join
+    word.reverse
   end
+  new_array
+  binding.pry
 end
