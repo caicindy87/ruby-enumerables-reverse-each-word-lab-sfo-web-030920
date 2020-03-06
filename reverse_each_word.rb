@@ -6,4 +6,5 @@ def reverse_each_word(string)
     reversed << character.reverse
     binding.pry
   end
+  reversed.join
 end
